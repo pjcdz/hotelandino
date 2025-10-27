@@ -6,7 +6,7 @@ export const sprintsData: Sprint[] = [
     number: 1,
     name: 'Funcionalidades Core de Reservas',
     duration: '10 minutos (2 días)',
-    completedPoints: 25,
+    completedPoints: 40,
     totalPoints: 40,
     status: 'completed',
     features: [
@@ -39,7 +39,7 @@ export const sprintsData: Sprint[] = [
         name: 'Registro de nueva reserva',
         description: 'Formulario completo para crear reservas con datos del cliente',
         points: 15,
-        status: 'partial',
+        status: 'completed',
         component: '/sprint2/new-reservation'
       }
     ]
@@ -48,7 +48,7 @@ export const sprintsData: Sprint[] = [
     number: 2,
     name: 'Gestión de Pagos y Adelantos',
     duration: '10 minutos (2 días)',
-    completedPoints: 14,
+    completedPoints: 34,
     totalPoints: 34,
     status: 'completed',
     features: [
@@ -73,15 +73,16 @@ export const sprintsData: Sprint[] = [
         name: 'Registro de pago con fecha y moneda',
         description: 'Formulario para registrar pagos en ARS o USD',
         points: 10,
-        status: 'partial',
-        component: '/sprint3/payment-register'
+        status: 'completed',
+        component: '/sprint2/payment-register'
       },
       {
         id: 'PB-07',
         name: 'Generación e impresión de recibo',
         description: 'Sistema de generación automática de recibos',
         points: 10,
-        status: 'pending'
+        status: 'completed',
+        component: '/sprint3/receipt'
       }
     ]
   },
@@ -89,7 +90,7 @@ export const sprintsData: Sprint[] = [
     number: 3,
     name: 'Completar Pagos y Reportes',
     duration: '10 minutos (2 días)',
-    completedPoints: 15,
+    completedPoints: 30,
     totalPoints: 30,
     status: 'completed',
     features: [
@@ -99,7 +100,7 @@ export const sprintsData: Sprint[] = [
         description: 'Finalización del módulo de pagos',
         points: 5,
         status: 'completed',
-        component: '/sprint3/payment-register'
+        component: '/sprint2/payment-register'
       },
       {
         id: 'PB-07',
@@ -114,15 +115,16 @@ export const sprintsData: Sprint[] = [
         name: 'Cancelación automática 24hs',
         description: 'Sistema que cancela reservas sin pago en 24 horas',
         points: 10,
-        status: 'partial',
-        component: '/sprint4/auto-cancel'
+        status: 'completed',
+        component: '/sprint3/auto-cancel'
       },
       {
         id: 'PB-09',
         name: 'Alertas de pagos pendientes',
         description: 'Notificaciones para reservas pendientes de pago',
         points: 5,
-        status: 'pending'
+        status: 'completed',
+        component: '/sprint3/alerts'
       }
     ]
   },
@@ -130,7 +132,7 @@ export const sprintsData: Sprint[] = [
     number: 4,
     name: 'Operaciones y Reportes',
     duration: '10 minutos (2 días)',
-    completedPoints: 10,
+    completedPoints: 30,
     totalPoints: 30,
     status: 'completed',
     features: [
@@ -147,15 +149,16 @@ export const sprintsData: Sprint[] = [
         name: 'Cancelación manual sin reintegro',
         description: 'Sistema de cancelación de reservas',
         points: 10,
-        status: 'partial',
+        status: 'completed',
         component: '/sprint4/cancel'
       },
       {
-        id: 'PB-12',
-        name: 'Reporte de Reservas Emitidas',
-        description: 'Reporte semanal de todas las reservas',
+        id: 'PB-12/13',
+        name: 'Reportes Gerenciales',
+        description: 'Reportes de Reservas Emitidas y Concretadas',
         points: 10,
-        status: 'pending'
+        status: 'completed',
+        component: '/sprint4/reports'
       }
     ]
   }

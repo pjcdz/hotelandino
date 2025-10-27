@@ -208,7 +208,7 @@ export default function SystemPage() {
               <TabsContent value="operaciones" className="space-y-4">
                 <h3 className="text-xl font-bold text-gray-900 mt-6">Operaciones Hoteleras</h3>
                 
-                <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
                   <Link href="/sprint4/checkin">
                     <Card className="hover:shadow-lg transition-shadow cursor-pointer border-2 h-full">
                       <CardHeader>
@@ -220,6 +220,51 @@ export default function SystemPage() {
                       </CardHeader>
                       <CardContent>
                         <Badge>Sprint 4 | PB-10</Badge>
+                      </CardContent>
+                    </Card>
+                  </Link>
+
+                  <Link href="/sprint4/cancel">
+                    <Card className="hover:shadow-lg transition-shadow cursor-pointer border-2 h-full">
+                      <CardHeader>
+                        <XCircle className="h-8 w-8 text-red-600 mb-2" />
+                        <CardTitle className="text-lg">Cancelar Reserva</CardTitle>
+                        <CardDescription>
+                          Gestión de cancelaciones manuales
+                        </CardDescription>
+                      </CardHeader>
+                      <CardContent>
+                        <Badge>Sprint 4 | PB-11</Badge>
+                      </CardContent>
+                    </Card>
+                  </Link>
+
+                  <Link href="/sprint3/auto-cancel">
+                    <Card className="hover:shadow-lg transition-shadow cursor-pointer border-2 h-full">
+                      <CardHeader>
+                        <Clock className="h-8 w-8 text-yellow-600 mb-2" />
+                        <CardTitle className="text-lg">Auto-cancelación 24hs</CardTitle>
+                        <CardDescription>
+                          Sistema automático de cancelación
+                        </CardDescription>
+                      </CardHeader>
+                      <CardContent>
+                        <Badge>Sprint 3 | PB-08</Badge>
+                      </CardContent>
+                    </Card>
+                  </Link>
+
+                  <Link href="/sprint3/alerts">
+                    <Card className="hover:shadow-lg transition-shadow cursor-pointer border-2 h-full border-orange-300 bg-orange-50">
+                      <CardHeader>
+                        <FileText className="h-8 w-8 text-orange-600 mb-2" />
+                        <CardTitle className="text-lg">Alertas de Pagos</CardTitle>
+                        <CardDescription>
+                          Monitoreo de reservas pendientes
+                        </CardDescription>
+                      </CardHeader>
+                      <CardContent>
+                        <Badge variant="default">Sprint 3 | PB-09</Badge>
                       </CardContent>
                     </Card>
                   </Link>
@@ -243,19 +288,48 @@ export default function SystemPage() {
               <TabsContent value="reportes" className="space-y-4">
                 <h3 className="text-xl font-bold text-gray-900 mt-6">Reportes y Estadísticas</h3>
                 
-                <Card className="border-2 border-gray-300 bg-gray-50">
-                  <CardContent className="pt-6">
-                    <div className="text-center py-12">
-                      <FileText className="h-16 w-16 text-gray-400 mx-auto mb-4" />
-                      <h4 className="text-xl font-semibold text-gray-600 mb-2">
-                        Módulo de Reportes
-                      </h4>
-                      <p className="text-gray-500">
-                        En desarrollo - Sprint 4 (PB-12)
-                      </p>
-                    </div>
-                  </CardContent>
-                </Card>
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+                  <Link href="/sprint4/reports">
+                    <Card className="hover:shadow-lg transition-shadow cursor-pointer border-2 h-full border-blue-300 bg-blue-50">
+                      <CardHeader>
+                        <FileText className="h-10 w-10 text-blue-600 mb-3" />
+                        <CardTitle className="text-xl">Reportes Gerenciales</CardTitle>
+                        <CardDescription className="text-blue-700">
+                          Sistema completo de reportes semanales
+                        </CardDescription>
+                      </CardHeader>
+                      <CardContent className="space-y-2">
+                        <Badge variant="default" className="mr-2">Sprint 4 | PB-12</Badge>
+                        <Badge variant="default">PB-13</Badge>
+                        <div className="mt-4 text-sm text-blue-800">
+                          <p>✓ Reservas Emitidas</p>
+                          <p>✓ Reservas Concretadas</p>
+                          <p>✓ KPIs y Métricas</p>
+                          <p>✓ Exportación a PDF</p>
+                        </div>
+                      </CardContent>
+                    </Card>
+                  </Link>
+
+                  <Card className="border-2 border-purple-300 bg-purple-50 h-full">
+                    <CardHeader>
+                      <FileText className="h-10 w-10 text-purple-600 mb-3" />
+                      <CardTitle className="text-xl text-purple-900">Dashboard Analítico</CardTitle>
+                      <CardDescription className="text-purple-700">
+                        Visualización avanzada de datos
+                      </CardDescription>
+                    </CardHeader>
+                    <CardContent className="space-y-2">
+                      <Badge variant="outline">Futuro</Badge>
+                      <div className="mt-4 text-sm text-purple-800">
+                        <p>• Gráficos de ocupación</p>
+                        <p>• Tendencias de ingresos</p>
+                        <p>• Análisis predictivo</p>
+                        <p>• Métricas en tiempo real</p>
+                      </div>
+                    </CardContent>
+                  </Card>
+                </div>
               </TabsContent>
             </Tabs>
 

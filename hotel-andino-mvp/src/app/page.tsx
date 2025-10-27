@@ -93,6 +93,22 @@ export default function Home() {
           </CardContent>
         </Card>
 
+        <Card className="mb-8 bg-gradient-to-r from-green-500 to-teal-600 text-white">
+          <CardHeader>
+            <CardTitle className="text-2xl">🏨 Demo del Hotel</CardTitle>
+            <CardDescription className="text-green-100">
+              Experimenta el sitio web del Hotel Andino como cliente
+            </CardDescription>
+          </CardHeader>
+          <CardContent>
+            <Link href="/demo">
+              <Button size="lg" variant="secondary" className="w-full">
+                Ver Demo del Hotel <ArrowRight className="ml-2 h-5 w-5" />
+              </Button>
+            </Link>
+          </CardContent>
+        </Card>
+
         <Tabs defaultValue="overview" className="space-y-4">
           <TabsList className="grid w-full grid-cols-5">
             <TabsTrigger value="overview">Vista General</TabsTrigger>
